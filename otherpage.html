@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--Charset-->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contoh Halaman Lain Untuk Kontak</title>
+    <!--Menghubungkan file CSS secara external-->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <p>Coba coba aja</p>
+    <div>
+        <a href="index.html" class="menu">Home</a>
+        <a href="otherpage.html" class="menu">Kontak</a>
+    </div>
+    <!--Heading 2-->
+    <h2>Hubungi Saya</h2>
+    <!--Contoh 1-->
+    <p>Email : almuhasibiprabu@gmail.com</p>
+    <!--Table-->
+    <table border="1">
+        <caption>Daftar Pengunjungku</caption>
+        <tr>
+            <th>Nama Pengunjung</th>
+            <th>Asal</th>
+        </tr>
+        <tr>
+            <td>Ronaldo</td>
+            <td>Portugal</td>
+        </tr>
+    </table>
+    <!--List-->
+    <ul class="pilihan">
+        <li>Pilihan 1</li>
+        <li>Pilihan 2</li>
+    </ul>
+    <ol class="pilihan1">
+        <li>Pilihan 3</li>
+        <li>Pilihan 4</li>
+    </ol>
+    <!--Form, Text, Textarea-->
+    <form>
+        <!--Label dan id-->
+        <fieldset>
+        <legend>Nama dan Pesan</legend>
+        <label for="nama">Nama</label><br>
+        <input type="text" placeholder="Username" value="Nama Anda" id="nama">
+        <br>
+        <label for="pesan-user"></label>
+        <textarea cols="100" rows="7" id="pesan-user">Ketik pesan....</textarea>
+        <br>
+        </fieldset>
+        <!--Checkbox dan Radio-->
+        <label>Hobi</label><br>
+        <input type="checkbox" name="hobi-user" value="0">Bermain Game <br>
+        <input type="checkbox" name="hobi-user" value="1">Belajar <br>
+        <input type="checkbox" name="hobi-user" value="2">Ngoding
+        <br>
+        <label>Gender</label><br>
+        <input type="radio" name="gender" value="0">Laki-laki <br>
+        <input type="radio" name="gender" value="1">Perempuan<br>
+        <label>Pelajaran</label>
+        <!--Select & Option-->
+        <select class="front">
+            <optgroup label="FrontEnd">
+            <option value="html">HTML</option>
+            <option value="css">CSS</option>
+            </optgroup>
+        </select>
+        <input type="submit" value="Kirim">
+    </form>
+    <!--Entities & Number-->
+    <p>&copy; Prabu Addin &#8709;</p>
+</body>
+</html>
