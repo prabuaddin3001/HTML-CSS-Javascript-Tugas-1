@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript part 3t</title>
+</head>
+<body>
+    <div id="cetak"></div>
+    <script>
+        var namaku = "Prabu";
+
+        //1. Switch case
+        switch(namaku){
+            case "Carl":
+            alert('Namanya adalah Carl');
+            break;
+
+            case "Prabu":
+            alert('Namanya adalah Prabu');
+            break;
+
+            default:
+            alert('Tidak ada yang cocok');
+        }
+
+        //2. for loop
+        //for(mulai; sampai; perpindahan)
+        
+        for(var i=0; i<5; i++){
+            alert(i);
+        }
+
+        //3. while loop
+        //while(syarat){
+            //apa yang dilakukan
+        //}
+
+        var i = 0;
+        var text = '';
+
+        while(i < 5){
+            text += "<br>Urutan ke- " + i;
+            i++;
+        }
+        
+        //4. do while
+        do{
+            text += "<br> Angka ke : " + i;
+            i++;
+        }
+        while(i < 5);
+
+        document.getElementById("cetak").innerHTML = text;
+    </script>
+</body>
+</html>

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript part 2</title>
+</head>
+<body>
+    <div id="wrap"></div>
+    <div id="1"></div>
+    <div id="2"></div>
+    <div id="3"></div>
+    <div id="4"></div>
+    <script>
+        //Function
+
+        //Tulis fungsi
+        function printText(){
+            var a = "Saya Prabu";
+            document.getElementById("wrap").innerHTML = a;
+        }
+        //memanggil fungsi
+        printText();
+
+        //Parameter pada fungsi
+        function printText(nama, nama2){
+            var text = nama + nama2 + " itu namaku";
+            document.getElementById("wrap").innerHTML = text;
+        }
+
+        printText("Addin", " Prabu");
+        //Return pada javascript
+        function menjumlahkan(angka1, angka2){
+            return angka1 / angka2;
+        }
+
+        var hasil = menjumlahkan(50, 10);
+        document.getElementById("1").innerHTML = hasil;
+
+        //Scope variabel = global var & local var
+        //global
+        var tulis = "Welcome";
+
+        function cetakTulisan(){
+            //local var
+            var tulis1 = " to my page";
+
+            //global var
+            tulis = " to my home"
+        }
+        cetakTulisan();
+
+        document.getElementById("2").innerHTML = tulis;
+        //Tipe data array = sort, reverse, concat, length, join(" seperate ")
+        var box = ["Ferrari","Lamborghini","BMW"];
+        var box1 = ["Avanza","Innova"];
+        var totalBox = box.concat(box1);
+        //box[1] = "Mercedes";
+        //var boxBaru = box[1];
+
+        //Splice -> add(mulai, dihapus, isi), splice -> remove
+        //pop, push, shift(), unshift()
+        //box.splice(0, 0, "Suzuki");
+
+        box.pop();
+        box.push("Limosin");
+
+        box.shift();
+        box.unshift("Bajaj")
+
+        document.getElementById("3").innerHTML = box;
+        //Boolean = true or false
+
+        //if dan else
+        //operator logika : ==, !=, >, >=, <, <=
+        
+        var uangKu = 100000;
+        var uangMu = 50000;
+        var hargaBarang = 20000;
+
+        //if (uangKu == hargaBarang){
+          //  document.getElementById("4").innerHTML = "Berhasil !";
+        //} else {
+          //  alert(' Uang anda kurang !');
+        //}
+        //if(uangKu == hargaBarang){
+        //    alert('Success');
+        //} else if(uangMu >= hargaBarang){
+        //    alert('Kebanyakan uangnyaaa, BERHASIL!');
+        //} else {
+        //    alert('Gagal!')
+        //}
+        //nested if
+        if(uangKu > hargaBarang){
+            if(uangKu > hargaBarang*2){
+                alert('Cukup Uang');
+            } else {
+                alert('Tidak ada yang bisa dibeli');
+            }
+        }
+    </script>
+</body>
+</html>

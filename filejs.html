@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Belajar Javascript Disini</title>
+</head>
+<body>
+    <img src="images/image0.jpeg" alt="Prabu" width="500px" height="500px">
+    <div id="wrap"></div>
+    <div id="1"></div>
+    <div id="2"></div>
+    <div id="3"></div>
+    <div id="4"></div>
+    <div id="5"></div>
+    <div id="6"></div>
+    <script>
+        //1
+        document.getElementById("1").innerHTML = "Prabu Addin";
+        //2. Variable
+        var a = 5000000;
+        document.getElementById("wrap").innerHTML = a;
+        //3. Tipe data string
+        var firstName = "Prabu";
+        document.getElementById("2").innerHTML = firstName;
+        //4. Tipe data angka
+        var angka = 1230 + 50;
+        document.getElementById("3").innerHTML = angka;
+        //5. Operator angka = + - / %
+        var angka1 = 2000;
+        var angka2 = 3500;
+        
+        var angka_baru = angka1 % angka2;
+        document.getElementById("4").innerHTML = angka_baru;
+        //6. Metode angka = toFixed(n), toString(), random(), min(a, b, c), max(a, b, c)
+        var angka_baru1 = Math.max(angka, angka1, angka2);
+        //7. Metode angka bag 2 = round(), ceil(), floor() ObjectMethods(ex: abs, log) r
+        //formula -> Math.floor(Math.random() * x) + 1;
+        angka_baru1 = Math.log(241.190);
+        document.getElementById("5").innerHTML = angka_baru1;
+        //8. Metode String = length, indexOf, lastIndexOf, search, charAt
+        //toUpperCase(), toLowerCase(), replace
+        //substring(start, end), substr(start, length)
+        //parseInt() parseFloat
+        var nama = "Prabu Addin";
+        var hasil = nama.replace("Addin", "Adin");
+
+        document.getElementById("6").innerHTML = hasil; 
+    </script>
+</body>
+</html>
